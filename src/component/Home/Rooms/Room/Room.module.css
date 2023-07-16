@@ -1,0 +1,13 @@
+.image {
+    max-width: 740px;
+    height: 500px;
+}
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+.link:hover {
+    color: #000 !important;
+}
