@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    withCredentials: false, // changed from true to false
+    withCredentials: false,
     baseURL: 'https://pegashotelapi.up.railway.app/',
     headers: {'content-type': 'application/json'}
 });
