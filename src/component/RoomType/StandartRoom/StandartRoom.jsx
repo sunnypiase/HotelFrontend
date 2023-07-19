@@ -1,23 +1,21 @@
 import RoomType from "../RoomType";
 import {connect} from "react-redux";
 
-const LuxRoom = ({rooms}) => {
+const StandartRoom = ({rooms}) => {
     const description = [
         'Двоспальне ліжко',
-        'Розкладний двоспальний диван',
         'Холодильник',
         'Телевізор',
-        'Душ',
         'Кондиціонер',
+        'Душ',
         'Безкоштовне місце на парковці'
     ]
     const price = [
-        '1-2 людини - 1200',
-        '3-4 людини - 1400'
+        '1-2 людини - 1100'
     ]
 
     return <RoomType
-        title='Двокімнатний люкс'
+        title='Стандартний номер'
         description={description}
         price={price}
         rooms={rooms}
@@ -26,7 +24,7 @@ const LuxRoom = ({rooms}) => {
 
 const mapStateToProps = (state) => {
     return {
-        rooms: state.luxRoom.rooms
+        rooms: state.standartRoom.rooms
     }
 }
-export default connect(mapStateToProps)(LuxRoom)
+export default connect(mapStateToProps)(StandartRoom)

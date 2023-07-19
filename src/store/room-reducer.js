@@ -1,15 +1,16 @@
 const SET_ROOM = 'SET_ROOM'
-import {getRoom} from "../api/api";
 
-let initialState = {
-    room: []
+const initialState = {
+    id: null,
+    images: []
 }
 
 const roomReducer = (state = initialState, action) => {
-    switch (action.type) {
+    switch (action.type){
         case SET_ROOM:
             return {
-                room: action.payload
+                id: action.room.id,
+                images: action.room.images
             }
         default:
             return state
@@ -18,9 +19,4 @@ const roomReducer = (state = initialState, action) => {
 
 export default roomReducer
 
-const setRoom = (payload) => ({type: SET_ROOM, payload})
-
-const getRoom = () => async (dispatch) => {
-    const data = await getRoom()
-    dispatch(setRoom(data))
-}
+export const setRoom = (room) => ({type: SET_ROOM, room})

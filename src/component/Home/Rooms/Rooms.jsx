@@ -26,7 +26,7 @@ const Rooms = () => {
             direction='row-reverse'
             src={twoPlacesImg}
             title='Двомісцевий номер'
-            path='#'
+            path='/double-room'
             backgroundColor='#B7B7B7'
             color='#2B2B2B'
         />
@@ -34,7 +34,7 @@ const Rooms = () => {
             direction='row'
             src={standartImg}
             title='Стандарт'
-            path='#'
+            path='/standart-room'
             backgroundColor='#303030'
             color='#BDBDBD'
         />
@@ -42,7 +42,7 @@ const Rooms = () => {
             direction='row-reverse'
             src={hostel}
             title='Хостел'
-            path='#'
+            path='/hostel-room'
             backgroundColor='#B7B7B7'
             color='#2B2B2B'
         />
